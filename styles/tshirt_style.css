@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box; }
+
+section {
+  height: 500px;
+  width: 100%;
+  padding: 15px; }
+
+.container {
+  border: 3px #5BA3D6 solid;
+  height: 450px;
+  width: 100%;
+  position: relative; }
+
+.shirtImage {
+  height: 400px;
+  background-image: url("/Users/jaserader/dev/homework/week02/tuesday/assets/blue-shirt-md.png");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+nav {
+  bottom: 0;
+  width: 100%;
+  position: absolute; }
+
+.shirtNav a {
+  border-top: 3px #5BA3D6 solid;
+  border-right: 3px #5BA3D6 solid;
+  height: 60px;
+  width: 20%;
+  float: left;
+  color: #5BA3D6;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 15px; }
+  .shirtNav a:hover {
+    background: #5BA3D6;
+    color: #fff; }
+
+nav a:last-child {
+  border-right: none; }
+
+.fa-repeat {
+  height: 35px;
+  width: 35px;
+  border-left: 3px #5BA3D6 solid;
+  border-bottom: 3px #5BA3D6 solid;
+  color: #5BA3D6;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 8px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .fa-repeat:hover {
+    background: #5BA3D6;
+    color: #fff; }
+
+.trees {
+  color: #5BA3D6;
+  font-size: 25px;
+  width: 100%;
+  padding: 25px 25px; }
+
+.save {
+  float: left; }
+
+.trees .price {
+  float: right;
+  font-weight: bold; }
+
+.sizeList {
+  list-style: none; }
