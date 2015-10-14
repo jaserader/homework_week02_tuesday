@@ -6,6 +6,7 @@ section {
   height: 500px;
   width: 100%;
   padding: 15px;
+  margin-bottom: 25px;
 }
 
 .container {
@@ -15,14 +16,28 @@ section {
   position: relative;
 }
 
-.shirtImage {
+.shirtImage1 {
   height: 400px;
-  background-image: url("/Users/jaserader/dev/homework/week02/tuesday/assets/blue-shirt-md.png");
+  background-image: url("/Users/jaserader/dev/homework/week02/tuesday/assets/shirt_blue.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-nav {
+.shirtImage2 {
+  height: 400px;
+  background-image: url("/Users/jaserader/dev/homework/week02/tuesday/assets/shirt_pink.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.shirtImage3 {
+  height: 400px;
+  background-image: url("/Users/jaserader/dev/homework/week02/tuesday/assets/shirt_yellow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.shirtNav {
   bottom: 0;
   width: 100%;
   position: absolute;
@@ -45,7 +60,7 @@ nav {
   }
 }
 
-nav a:last-child {
+.shirtNav a:last-child {
   border-right: none;
 }
 
@@ -83,6 +98,99 @@ nav a:last-child {
   font-weight: bold;
 }
 
-.sizeList {
-  list-style: none;
+.size:hover .sizeNav{
+  display: block;
+
+  ul {
+    color: #5BA3D6;
+    border: 3px #5BA3D6 solid;
+    height: 150px;
+    width: 95px;
+    list-style-type: none;
+      bottom: 100%;
+
+    li {
+      float: left;
+      display: block;
+      padding-top: 10px;
+      padding-right: 5px;
+      // padding-left: 6px;
+      // padding-right: 2px;
+    }
+  }
+}
+.sizeNav {
+  display: none;
+}
+
+.color:hover .colorNav{
+  display: block;
+
+  ul {
+    color: #5BA3D6;
+    border: 3px #5BA3D6 solid;
+    height: 125px;
+    width: 125px;
+    list-style-type: none;
+    position: relative;
+
+    i {
+      font-size: 33px;
+      display: block;
+      float: left;
+      position: relative;
+      padding: 5px;
+      top: 17px;
+      left: -19px;
+    }
+  }
+}
+.colorNav {
+  display: none;
+}
+
+// .colorNav a:first-child {
+//   content: '';
+//   position: absolute;
+//   left: 30px;
+//   top: -8px;
+//   width: 0;
+//   height: 0;
+//   border-left: 5px solid transparent;
+//   border-right: 5px solid transparent;
+//   border-bottom: 8px solid #444;
+// }
+
+.pink {
+  color: #D382AA;
+}
+
+.yellow {
+  color: #DCB07D;
+}
+
+.green {
+  color: #8BB992;
+}
+
+@media (min-width: 800px) {
+  section {
+    float: left;
+    height: 500px;
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+
+}
+@media (min-width: 1100px) {
+
+  section {
+    float: left;
+    height: 500px;
+    width: 33.33%;
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+
 }
